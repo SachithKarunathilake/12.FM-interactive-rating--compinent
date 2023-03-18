@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+
+main{
+    width:87%;
+    max-width: 400px;
+    border-radius:14px;
+    max-height:400px;/*!change later*/
+    overflow: hidden;
+    color:#fff;
+    padding:30px;
+    background: linear-gradient(350deg, hsl(229, 17%, 12%) 10% ,hsl(218, 19%, 16%)100% );
+}
+
+.rating_section{
+    height:100%;
+    display: none;
+}
+
+.thank_section{
+    min-height: 400px;
+    height:100%;
+    z-index:2;
+    /* display: none; */
+}
+
+/* .star_div {
+    
+} */
+
+.star_div, .numbers_div p{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color:hsl(213, 17%, 23%);
+    
+}
+
+.star_div img{
+    display: block;
+}
+
+.rating_section h1{
+    margin:20px 0 0 0;
+}
+
+.rating_section p{
+    margin:15px 0 0 0;
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.numbers_div{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers_div p{
+    opacity: 0.5;
+}
+
+button.submit{
+    width:100%;
+    height:50px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius:50px;
+    border:none;
+    margin:20px 0 0 0;
+    color:#fff;
+    letter-spacing: 0.3em;
+    font-weight:700;
+}
+
